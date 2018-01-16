@@ -8,4 +8,8 @@ pipeline {
        }
     }
   }
+  
+  always {
+    archive 'dist/*.jar'
+  }
 }
