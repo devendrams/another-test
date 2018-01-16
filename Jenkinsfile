@@ -8,8 +8,9 @@ pipeline {
        }
     }
   }
-  
-  always {
-    archive 'dist/*.jar'
+  post{
+    always {
+      archive 'dist/*.jar'
+    }
   }
 }
